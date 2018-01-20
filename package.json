@@ -1,0 +1,25 @@
+{
+  "name": "bill-scraper",
+  "version": "1.0.0",
+  "description": "A JavaScript API to scrape and analyze bills in Congress.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jeffreyshen19/BillScraper.js.git"
+  },
+  "keywords": [
+    "javascript",
+    "civic",
+    "engagement",
+    "politics"
+  ],
+  "author": "Jeffrey Shen <jeffreyshencc@gmail.com> (http://jeffreyshen.com)",
+  "license": "SEE LICENSE IN LICENSE",
+  "bugs": {
+    "url": "https://github.com/jeffreyshen19/BillScraper.js/issues"
+  },
+  "homepage": "https://github.com/jeffreyshen19/BillScraper.js#readme"
+}
