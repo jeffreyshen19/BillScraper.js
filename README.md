@@ -4,6 +4,10 @@ A JavaScript API to scrape and analyze bills in Congress.
   * Parses bills for key points and ideas.
   * Powerful filtering.
 
+## Table of Contents
+
+* `test`: Holds all unit tests.
+
 ## Community
 
 This repository encourages all users to contribute. Please read the [Code of Conduct](./CODE_OF_CONDUCT.md) and [Contributing.md](./CONTRIBUTING.md).
