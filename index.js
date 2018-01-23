@@ -1,3 +1,3 @@
 module.exports = {
-  getSync: require("./lib/getSync.js")
+  getBulkSync: require("./lib/getBulkSync.js")
 };
