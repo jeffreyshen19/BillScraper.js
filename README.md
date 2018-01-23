@@ -6,6 +6,8 @@ A JavaScript API to scrape and analyze bills in Congress. (Updated for the 115th
 
 ## Table of Contents
 
+* `lib`: Holds all Javascript files
+* `out`: Holds automatically generated documentation files
 * `test`: Holds all unit tests.
 
 ## Community
