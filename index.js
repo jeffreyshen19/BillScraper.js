@@ -1,3 +1,3 @@
 module.exports = {
-  get: require("./lib/getter.js")
+  getSync: require("./lib/getSync.js")
 };
