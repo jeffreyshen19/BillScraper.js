@@ -6,4 +6,7 @@ Features to implement
 * Make async versions of functions
 * Chaining methods
 * Create Bill Object
-* Write unit test
+* Write unit tests
+* Documentation
+* Utilize option object for filtering
+* Search method
