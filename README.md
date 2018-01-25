@@ -1,4 +1,4 @@
-# BillScraper.js
+# BillScraper.js 📝📝📝
 A JavaScript API to scrape and analyze bills in Congress. (Updated for the 115th Congress)
   * Returns full Congressional bill text and metadata from Congress.gov as JSON.
   * Parses bills for key points and ideas.
