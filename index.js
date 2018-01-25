@@ -1,4 +1,4 @@
 module.exports = {
-  getBulkSync: require("./lib/getBulkSync.js"),
-  getBillSync: require("./lib/getBillSync.js"),
+  getBulkSync: require("./lib/getBulk/getBulkSync.js"),
+  getBill: require("./lib/getBill/getBill.js"),
 };
