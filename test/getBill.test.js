@@ -23,12 +23,6 @@ describe('getBill', function() {
     }).to.throw(TypeError);
   });
 
-  it('should throw an error if the billName is not valid', function() {
-    expect(() => {
-      getBill("", (res) => {});
-    }).to.throw(TypeError);
-  });
-
   it('should return an object if the billName is valid', function() {
     getBill("BILLSTATUS-115sres99", (res) => {
       expect(res).to.be.an("object").that.is.not.empty;
