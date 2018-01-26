@@ -16,6 +16,7 @@ View documentation [here](https://jeffreyshen19.github.io/BillScraper.js/out/).
 
 * `lib`: Holds all Javascript files
 * `misc`: Hold all graphics for the README.md
+* `runner`: Holds javascript files used to test the library while developing
 * `test`: Holds all unit tests.
 
 ## Community
