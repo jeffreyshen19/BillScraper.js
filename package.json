@@ -4,7 +4,8 @@
   "description": "A JavaScript API to scrape and analyze bills in Congress.",
   "main": "index.js",
   "scripts": {
-    "test": "mocha"
+    "test": "mocha",
+    "docs": "jsdoc lib/**/*.js"
   },
   "repository": {
     "type": "git",
