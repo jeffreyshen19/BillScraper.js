@@ -6,7 +6,6 @@ Features to implement
 * Chaining methods
 * Create Bill Object
 * Write style guide
-* Documentation
 * Utilize option object for filtering
 * Search method
 * Add error handler if there is no web connection
