@@ -10,4 +10,3 @@ Features to implement
 * Utilize option object for filtering
 * Search method
 * Add error handler if there is no web connection
-()
