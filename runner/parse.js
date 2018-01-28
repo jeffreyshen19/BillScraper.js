@@ -1,4 +1,5 @@
 var billScraper = require("../");
+var util = require('util');
 
 /*billScraper.getBill("BILLSTATUS-115hr999", function(res){
   billScraper.cleanBill(res, function(){
@@ -10,6 +11,6 @@ var validBillTypes = ["sres", "sjres", "sconres", "s", "hres", "hr", "hjres", "h
 
 billScraper.getBill("BILLSTATUS-115sres99", function(res){
   billScraper.cleanBill(res, function(parsedResult){
-    //parsedResult is JSON
+    console.log(util.inspect(parsedResult, false, null));
   });
 });

@@ -2,25 +2,25 @@
   laws: '',
   congress: 115,
   title: 'A resolution recognizing the 11 African-American soldiers of the 333rd Field Artillery Battalion who were massacred in Wereth, Belgium, during the Battle of the Bulge in December 1944.',
-  relatedBills:
+  relatedBills: 
    [ { latestTitle: 'Providing official recognition of the massacre of 11 African-American soldiers of the 333rd Field Artillery Battalion of the United States Army who had been captured in Wereth, Belgium, during the Battle of the Bulge on December 17, 1944.',
        congress: 115,
        number: 43,
-       latestAction:
+       latestAction: 
         { text: 'Received in the Senate and referred to the Committee on Armed Services.',
           actionDate: '2017-11-02' },
        type: 'HCONRES' } ],
   calendarNumbers: '',
-  committees:
+  committees: 
    [ { name: 'Armed Services Committee',
-       activities:
-        { item:
+       activities: 
+        { item: 
            [ { name: 'Discharged from', date: '2017-10-16T22:45:25Z' },
              { name: 'Referred to', date: '2017-03-27T20:39:12Z' } ] },
        type: 'Standing',
        subcommittees: '',
        chamber: 'Senate' } ],
-  cosponsors:
+  cosponsors: 
    [ { sponsorshipDate: '2017-03-27',
        sponsorshipWithdrawnDate: '',
        isOriginalCosponsor: 'True',
@@ -33,7 +33,7 @@
        sponsorshipWithdrawnDate: '',
        isOriginalCosponsor: 'False',
        fullName: 'Sen. Boozman, John [R-AR]' } ],
-  titles:
+  titles: 
    [ { titleType: 'Official Title as Introduced',
        chamberCode: '',
        chamberName: '',
@@ -51,7 +51,7 @@
   createDate: '2017-03-28T05:32:32Z',
   billType: 'SRES',
   updateDate: '2018-01-25T21:37:59Z',
-  actions:
+  actions: 
    [ { actionDate: '2017-10-16',
        committee: '',
        links: '',
@@ -67,16 +67,16 @@
        committee: '' },
      { actionDate: '2017-10-16',
        committee: { systemCode: 'ssas00', name: 'Armed Services Committee' },
-       links:
-        { link:
+       links: 
+        { link: 
            { name: 'S6409',
              url: 'https://www.congress.gov/congressional-record/volume-163/senate-section/page/S6409' } },
        sourceSystem: { code: 0, name: 'Senate' },
        text: 'Senate Committee on Armed Services discharged by Unanimous Consent. (consideration: CR S6409)',
        type: 'Discharge' },
      { type: 'Committee',
-       links:
-        { link:
+       links: 
+        { link: 
            { name: 'S6409',
              url: 'https://www.congress.gov/congressional-record/volume-163/senate-section/page/S6409' } },
        actionDate: '2017-10-16',
@@ -86,8 +86,8 @@
        committee: { systemCode: 'ssas00', name: 'Armed Services Committee' } },
      { actionDate: '2017-03-27',
        committee: { systemCode: 'ssas00', name: 'Armed Services Committee' },
-       links:
-        { link:
+       links: 
+        { link: 
            { name: 'S2000',
              url: 'https://www.congress.gov/congressional-record/volume-163/senate-section/page/S2000' } },
        sourceSystem: { code: 0, name: 'Senate' },
@@ -103,7 +103,7 @@
   introducedDate: '2017-03-27',
   amendments: '',
   sponsors: [ { byRequestType: '', fullName: 'Sen. Manchin, Joe, III [D-WV]' } ],
-  subjects:
+  subjects: 
    [ 'Belgium',
      'Conflicts and wars',
      'Congressional tributes',
