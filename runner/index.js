@@ -1,6 +1,17 @@
 var billScraper = require("../");
-var util = require('util');
 
-billScraper.getBill("BILLSTATUS-115sres99", function(res){
-  console.log(util.inspect(res, false, null));
+/*billScraper.getBill("BILLSTATUS-115hr999", function(res){
+  billScraper.parseBill(res, function(){
+
+  });
+});*/
+
+console.log("starting");
+
+billScraper.getBulk("hr", function(res){
+  res.forEach(function(element){
+    billScraper.getBill(element, function(bill){
+      if(bill.title.length != 1) console.log(bill.title);
+    });
+  });
 });
