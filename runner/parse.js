@@ -10,7 +10,7 @@ var util = require('util');
 var validBillTypes = ["sres", "sjres", "sconres", "s", "hres", "hr", "hjres", "hconres"];
 
 billScraper.getBill("BILLSTATUS-115sres99", function(res){
-  billScraper.cleanBill(res, function(parsedResult){
-    console.log(util.inspect(parsedResult, false, null));
-  });
+  console.log(res);
+}, {
+  clean: false
 });
