@@ -2,31 +2,31 @@
 
 var assert = require('chai').assert;
 var expect = require('chai').expect;
-var cleanBill = require("../../lib/parser/cleanBill.js");
-var getBill = require("../../lib/scraper/getBill.js");
+var cleanBillStatus = require("../../lib/parser/cleanBillStatus.js");
+var getBillStatus = require("../../lib/scraper/getBillStatus.js");
 
-describe('cleanBill', function() {
+describe('cleanBillStatus', function() {
   it('should throw an error if bill is not an object', function() {
     expect(() => {
-      cleanBill(1, (res) => {});
+      cleanBillStatus(1, (res) => {});
     }).to.throw(TypeError);
   });
 
   it('should throw an error if there is no callback', function() {
     expect(() => {
-      cleanBill({});
+      cleanBillStatus({});
     }).to.throw(TypeError);
   });
 
   it('should throw an error if the bill is not valid', function() {
     expect(() => {
-      cleanBill({}, (res) => {});
+      cleanBillStatus({}, (res) => {});
     }).to.throw(Error);
   });
 
   it('should return an object if the bill is valid', function(){
-    getBill("BILLSTATUS-115sres99", (res) => {
-      cleanBill(res, function(cleanedRes){
+    getBillStatus("BILLSTATUS-115sres99", (res) => {
+      cleanBillStatus(res, function(cleanedRes){
         expect(cleanedRes).to.be.an("object").that.is.not.empty;
       });
     });

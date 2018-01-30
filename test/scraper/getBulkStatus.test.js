@@ -2,29 +2,29 @@
 
 var assert = require('chai').assert;
 var expect = require('chai').expect;
-var getBulk = require("../../lib/scraper/getBulk.js");
+var getBulkStatus = require("../../lib/scraper/getBulkStatus.js");
 
-describe('getBulk', function() {
+describe('getBulkStatus', function() {
   it('should throw an error if billType is not a string', function() {
     expect(() => {
-      getBulk(1, (res) => {});
+      getBulkStatus(1, (res) => {});
     }).to.throw(TypeError);
   });
 
   it('should throw an error if there is no callback', function() {
     expect(() => {
-      getBulk("");
+      getBulkStatus("");
     }).to.throw(TypeError);
   });
 
   it('should throw an error if the billType is not valid', function() {
     expect(() => {
-      getBulk("", (res) => {});
+      getBulkStatus("", (res) => {});
     }).to.throw(TypeError);
   });
 
   it('should return an array if the billType is valid', function() {
-    getBulk("hr", (res) => {
+    getBulkStatus("hr", (res) => {
       expect(res).to.be.an("array").that.is.not.empty;
     });
   });
