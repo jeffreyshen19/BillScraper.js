@@ -1,4 +1,7 @@
 # BillScraper.js 📝📝📝
+[![Inline docs](http://inch-ci.org/github/dwyl/hapi-auth-jwt2.svg?branch=master)](https://jeffreyshen19.github.io/BillScraper.js/out/)
+[](https://tokei.rs/b1/github/jeffreyshen19/BillScraper.js)
+
 A JavaScript API to scrape and analyze bills in Congress. (Updated for the 115th Congress)
 
 ## Why?
