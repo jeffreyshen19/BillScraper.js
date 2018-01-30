@@ -6,11 +6,11 @@ The current repository for bulk bill data is horrible to use for both citizens a
 
 ![Gif](./misc/explanation_of_the_problem.gif)
 
-## What does this project do 
- * Returns full Congressional bill text and metadata from Congress.gov as JSON. For example, it converts the XML (on the left) into concise, usable JSON (on the right) 
- 
+## What does this project do
+ * Returns full Congressional bill text and metadata from Congress.gov as JSON. For example, it converts the XML (on the left) into concise, usable JSON (on the right)
+
  ![picture](./misc/what-does-this-library-do.png)
- 
+
  * Parses bills for key points and ideas.
  * Powerful filtering and searching.
 
@@ -24,6 +24,10 @@ View documentation [here](https://jeffreyshen19.github.io/BillScraper.js/out/).
 * `misc`: Hold all graphics for the README.md
 * `runner`: Holds javascript files used to test the library while developing
 * `test`: Holds all unit tests.
+
+### Datasets used
+
+* [GPO Bill bulk data](https://www.gpo.gov/fdsys/bulkdata)
 
 ## Community
 
