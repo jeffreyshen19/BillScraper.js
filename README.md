@@ -2,7 +2,7 @@
 [![Inline docs](http://inch-ci.org/github/dwyl/hapi-auth-jwt2.svg?branch=master)](https://jeffreyshen19.github.io/BillScraper.js/out/)
 [](https://tokei.rs/b1/github/jeffreyshen19/BillScraper.js)
 
-A JavaScript API to scrape and analyze bills in Congress. (Updated for the 115th Congress)
+A JavaScript API to scrape and analyze bills in Congress. Works for bills from the 113th, 114th, and 115th congress.
 
 ## Why?
 The current repository for bulk bill data is horrible to use for both citizens and developers. As shown in the gif below, bills are uploaded as XML files in a giant folder, which makes programming any projects that involves congressional data cumbersome.

@@ -1,6 +1,6 @@
 var billScraper = require("../");
 var util = require("util");
 
-billScraper.getBill("BILLS-115hr1000ih", function(res){
+billScraper.getBill("BILLS-113hr1033rs", function(res){
   console.log(util.inspect(res, false, null));
-});
+}, {session: 2});
