@@ -6,6 +6,8 @@ module.exports = {
 
   //Bill
   getBill: require("./lib/scraper/getBill.js"),
+  cleanBill: require("./lib/parser/cleanBill.js"),
+  printBill: require("./lib/parser/printBill.js"),
 
   //Fields
   validBillTypes: ["sres", "sjres", "sconres", "s", "hres", "hr", "hjres", "hconres"]
