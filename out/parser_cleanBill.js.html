@@ -29,18 +29,16 @@
             <pre class="prettyprint source linenums"><code>var request = require('request');
 var parseXml = require('xml2js').parseString;
 
-function convertArraysToString(obj){
+function recursiveClean(obj){
   for(var prop in obj){
-    if(obj.hasOwnProperty(prop) &amp;&amp; typeof obj[prop] == "object"){
-      if(obj[prop].length == 1){
-        obj[prop] = obj[prop][0];
-        if(!isNaN(obj[prop]) &amp;&amp; obj[prop].length > 0) obj[prop] = parseInt(obj[prop]); //Parse all number strings into numbers
-        if(typeof obj[prop] == "object") convertArraysToString(obj[prop]);
-      }
-      else{
-        convertArraysToString(obj[prop]);
-      }
+    if(prop == "$") delete obj[prop];
+    else if((prop == "enum" || prop == "header") &amp;&amp; typeof obj[prop] == "object") obj[prop] = obj[prop][0];
+    else if(prop == "text" &amp;&amp; typeof obj[prop] == "object"){
+      if(typeof obj[prop][0] == "object" &amp;&amp; "_" in obj[prop][0]) obj[prop] = obj[prop][0]._;
+      else obj[prop] = obj[prop][0];
     }
+
+    if(typeof obj[prop] == "object") recursiveClean(obj[prop]);
   }
 }
 
@@ -61,82 +59,11 @@ var cleanBill = function(bill, callback){
   if(typeof bill != "object") throw new TypeError("'bill' needs to be an object");
   if(callback == null) throw new TypeError("A callback needs to be included");
 
-  var billCopy = Object.assign({}, bill);
+  var sections = Object.assign([], bill);
 
   try{
-  //Remove extraneous fields
-    if("constitutionalAuthorityStatementText" in bill) delete billCopy.constitutionalAuthorityStatementText;
-    if("version" in bill) delete billCopy.version;
-    if("latestAction" in bill) delete billCopy.latestAction;
-
-    //Clean up arrays with only one element
-    for(var prop in billCopy){
-      if (billCopy.hasOwnProperty(prop) &amp;&amp; typeof billCopy[prop] == "object" &amp;&amp;  billCopy[prop].length == 1 &amp;&amp; typeof billCopy[prop][0] == "string"){
-        billCopy[prop] = billCopy[prop][0];
-        if(!isNaN(billCopy[prop]) &amp;&amp; billCopy[prop].length > 0) billCopy[prop] = parseInt(billCopy[prop]); //Parse all number strings into numbers
-      }
-    }
-
-    //TODO: Make sure none of the following throw errors for all objects
-
-    //Clean up verbose JSON elements
-    if("name" in billCopy.policyArea[0]) billCopy.policyArea = billCopy.policyArea[0].name[0]; //Clean up policyArea
-
-    if("billSubjects" in billCopy.subjects[0] &amp;&amp; "legislativeSubjects" in billCopy.subjects[0].billSubjects[0]) billCopy.subjects = billCopy.subjects[0].billSubjects[0].legislativeSubjects[0].item.map(function(element){
-      return element.name[0];
-    }); //Convert the entire subjects JSON object into a more manageable array
-
-    billCopy.summaries = billCopy.summaries[0].billSummaries[0];
-    if(typeof billCopy.summaries == "object") billCopy.summaries = billCopy.summaries.item[0].text[0].replace(/&lt;\/?[^>]+>/g, "").trim(); //Replace the summary object with a simple string
-
-    billCopy.relatedBills = billCopy.relatedBills.map(function(element){
-      element = element.item[0];
-      delete element.relationshipDetails;
-      convertArraysToString(element);
-      return element;
-    }); //Trim related bills
-
-    billCopy.committees = billCopy.committees[0].billCommittees.map(function(element){
-      convertArraysToString(element.item);
-      delete element.item[0].systemCode;
-      return element.item[0];
-    }); //Trim committees
-
-    billCopy.cosponsors = billCopy.cosponsors[0].item.map(function(element){
-      convertArraysToString(element);
-      delete element.lastName;
-      delete element.firstName;
-      delete element.state;
-      delete element.party;
-      delete element.middleName;
-      delete element.bioguideId;
-      delete element.identifiers;
-      return element;
-    }); //Trim cosponsors
-
-    billCopy.sponsors = billCopy.sponsors[0].item.map(function(element){
-      convertArraysToString(element);
-      delete element.lastName;
-      delete element.firstName;
-      delete element.state;
-      delete element.party;
-      delete element.middleName;
-      delete element.bioguideId;
-      delete element.identifiers;
-      return element;
-    }); //Trim sponsors
-
-    billCopy.titles = billCopy.titles[0].item.map(function(element){
-      convertArraysToString(element);
-      return element;
-    }); //Trim titles
-
-    billCopy.actions = billCopy.actions[0].item.map(function(element){
-      convertArraysToString(element);
-      return element;
-    }); //Trim titles
-
-    callback(billCopy);
+    recursiveClean(sections);
+    callback(sections);
   }
   catch(e){
     throw new Error("JSON supplied must be a valid bill");
@@ -154,13 +81,13 @@ module.exports = cleanBill;
 </div>
 
 <nav>
-    <h2><a href="index.html">Home</a></h2><h3>Global</h3><ul><li><a href="global.html#cleanBill">cleanBill</a></li><li><a href="global.html#getBill">getBill</a></li><li><a href="global.html#getBulk">getBulk</a></li></ul>
+    <h2><a href="index.html">Home</a></h2><h3>Global</h3><ul><li><a href="global.html#cleanBill">cleanBill</a></li><li><a href="global.html#cleanBillStatus">cleanBillStatus</a></li><li><a href="global.html#getBill">getBill</a></li><li><a href="global.html#getBillStatus">getBillStatus</a></li><li><a href="global.html#getBulkStatus">getBulkStatus</a></li></ul>
 </nav>
 
 <br class="clear">
 
 <footer>
-    Documentation generated by <a href="https://github.com/jsdoc3/jsdoc">JSDoc 3.5.5</a> on Mon Jan 29 2018 10:34:35 GMT-0500 (EST)
+    Documentation generated by <a href="https://github.com/jsdoc3/jsdoc">JSDoc 3.5.5</a> on Wed Jan 31 2018 12:10:33 GMT-0500 (EST)
 </footer>
 
 <script> prettyPrint(); </script>
