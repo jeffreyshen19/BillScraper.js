@@ -23,3 +23,14 @@ npm install
 npm install
 npm test
 ```
+
+### Updating the docs
+Documentation is stored in the `out` folder on the gh-pages branch.
+```
+git checkout gh-pages
+git merge master
+npm run docs
+git add out/
+git commit -m "Updated docs"
+git push origin gh-pages
+```
