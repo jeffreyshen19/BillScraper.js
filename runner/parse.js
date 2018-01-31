@@ -9,7 +9,7 @@ var util = require('util');
 
 var validBillTypes = ["sres", "sjres", "sconres", "s", "hres", "hr", "hjres", "hconres"];
 
-billScraper.getBill("BILLSTATUS-115sres99", function(res){
+billScraper.getBillStatus("BILLSTATUS-113hr911", function(res){
   console.log(res);
 }, {
   clean: false
