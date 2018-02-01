@@ -28,4 +28,10 @@ describe('getBulkStatus', function() {
       expect(res).to.be.an("array").that.is.not.empty;
     });
   });
+
+  it('should return an array if the billType is valid and options are supplied', function() {
+    getBulkStatus("hr", (res) => {
+      expect(res).to.be.an("array").that.is.not.empty;
+    }, {congress: 113});
+  });
 });
