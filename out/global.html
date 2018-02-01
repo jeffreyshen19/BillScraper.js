@@ -228,7 +228,7 @@
     
     <dt class="tag-source">Source:</dt>
     <dd class="tag-source"><ul class="dummy"><li>
-        <a href="parser_cleanBill.js.html">parser/cleanBill.js</a>, <a href="parser_cleanBill.js.html#line30">line 30</a>
+        <a href="parser_cleanBill.js.html">parser/cleanBill.js</a>, <a href="parser_cleanBill.js.html#line27">line 27</a>
     </li></ul></dd>
     
 
@@ -279,7 +279,7 @@
 
     <h5>Example</h5>
     
-    <pre class="prettyprint"><code>getBill("BILLSTATUS-115sres99", function(res){
+    <pre class="prettyprint"><code>getBill("BILLS-115hr1001ih", function(res){
   cleanBill(res, function(parsedResult){
     //parsedResult is JSON
   });
@@ -417,7 +417,7 @@
     
     <dt class="tag-source">Source:</dt>
     <dd class="tag-source"><ul class="dummy"><li>
-        <a href="parser_cleanBillStatus.js.html">parser/cleanBillStatus.js</a>, <a href="parser_cleanBillStatus.js.html#line32">line 32</a>
+        <a href="parser_cleanBillStatus.js.html">parser/cleanBillStatus.js</a>, <a href="parser_cleanBillStatus.js.html#line29">line 29</a>
     </li></ul></dd>
     
 
@@ -1023,6 +1023,269 @@
     
 
     
+    <h4 class="name" id="getBulk"><span class="type-signature"></span>getBulk<span class="signature">(billType, callback, options)</span><span class="type-signature"></span></h4>
+    
+
+    
+
+
+
+<div class="description">
+    Asynchronously accesses list of bills in a given session as an array
+</div>
+
+
+
+
+
+
+
+
+
+    <h5>Parameters:</h5>
+    
+
+<table class="params">
+    <thead>
+    <tr>
+        
+        <th>Name</th>
+        
+
+        <th>Type</th>
+
+        
+
+        
+
+        <th class="last">Description</th>
+    </tr>
+    </thead>
+
+    <tbody>
+    
+
+        <tr>
+            
+                <td class="name"><code>billType</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">string</span>
+
+
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last">The type of bill (hr, s, hres, hjres, hconres, sconres, sjres, sres)</td>
+        </tr>
+
+    
+
+        <tr>
+            
+                <td class="name"><code>callback</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">function</span>
+
+
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last">Callback (with one paramater)</td>
+        </tr>
+
+    
+
+        <tr>
+            
+                <td class="name"><code>options</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">object</span>
+
+
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last">Options (Optional)
+                <h6>Properties</h6>
+                
+
+<table class="params">
+    <thead>
+    <tr>
+        
+        <th>Name</th>
+        
+
+        <th>Type</th>
+
+        
+
+        
+
+        <th class="last">Description</th>
+    </tr>
+    </thead>
+
+    <tbody>
+    
+
+        <tr>
+            
+                <td class="name"><code>session</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">integer</span>
+
+
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last">Which congressional session (default: 1)</td>
+        </tr>
+
+    
+
+        <tr>
+            
+                <td class="name"><code>congress</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">integer</span>
+
+
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last">Which congress (Default: 115)</td>
+        </tr>
+
+    
+    </tbody>
+</table>
+
+            </td>
+        </tr>
+
+    
+    </tbody>
+</table>
+
+
+
+
+
+
+<dl class="details">
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+    <dt class="tag-source">Source:</dt>
+    <dd class="tag-source"><ul class="dummy"><li>
+        <a href="scraper_getBulk.js.html">scraper/getBulk.js</a>, <a href="scraper_getBulk.js.html#line23">line 23</a>
+    </li></ul></dd>
+    
+
+    
+
+    
+
+    
+</dl>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <h5>Example</h5>
+    
+    <pre class="prettyprint"><code>getBulk("sres", function(res){
+ //res is an array
+}, {
+  congress: 115,
+  session: 1
+});</code></pre>
+
+
+
+        
+            
+
+    
+
+    
     <h4 class="name" id="getBulkStatus"><span class="type-signature"></span>getBulkStatus<span class="signature">(billType, callback, options)</span><span class="type-signature"></span></h4>
     
 
@@ -1255,6 +1518,197 @@
 
 
         
+            
+
+    
+
+    
+    <h4 class="name" id="printBill"><span class="type-signature"></span>printBill<span class="signature">(bill, callback)</span><span class="type-signature"> &rarr; {object}</span></h4>
+    
+
+    
+
+
+
+<div class="description">
+    Asynchronously combines all the text fields from cleanBill.js into a more manageable JSON object
+</div>
+
+
+
+
+
+
+
+
+
+    <h5>Parameters:</h5>
+    
+
+<table class="params">
+    <thead>
+    <tr>
+        
+        <th>Name</th>
+        
+
+        <th>Type</th>
+
+        
+
+        
+
+        <th class="last">Description</th>
+    </tr>
+    </thead>
+
+    <tbody>
+    
+
+        <tr>
+            
+                <td class="name"><code>bill</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">object</span>
+
+
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last">JSON bill (result from cleanBill.js)</td>
+        </tr>
+
+    
+
+        <tr>
+            
+                <td class="name"><code>callback</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">function</span>
+
+
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last">Callback</td>
+        </tr>
+
+    
+    </tbody>
+</table>
+
+
+
+
+
+
+<dl class="details">
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+    <dt class="tag-source">Source:</dt>
+    <dd class="tag-source"><ul class="dummy"><li>
+        <a href="parser_printBill.js.html">parser/printBill.js</a>, <a href="parser_printBill.js.html#line16">line 16</a>
+    </li></ul></dd>
+    
+
+    
+
+    
+
+    
+</dl>
+
+
+
+
+
+
+
+
+
+
+
+
+
+<h5>Returns:</h5>
+
+        
+<div class="param-desc">
+    - JSON result
+</div>
+
+
+
+<dl>
+    <dt>
+        Type
+    </dt>
+    <dd>
+        
+<span class="param-type">object</span>
+
+
+    </dd>
+</dl>
+
+    
+
+
+
+
+    <h5>Example</h5>
+    
+    <pre class="prettyprint"><code>getBill("BILLSTATUS-115sres99", function(res){
+  cleanBill(res, function(parsedResult){
+    printBill(parsedResult, function(printedResult){
+       //printedResult is JSON
+    });
+  });
+});</code></pre>
+
+
+
+        
     
 
     
@@ -1270,13 +1724,13 @@
 </div>
 
 <nav>
-    <h2><a href="index.html">Home</a></h2><h3>Global</h3><ul><li><a href="global.html#cleanBill">cleanBill</a></li><li><a href="global.html#cleanBillStatus">cleanBillStatus</a></li><li><a href="global.html#getBill">getBill</a></li><li><a href="global.html#getBillStatus">getBillStatus</a></li><li><a href="global.html#getBulkStatus">getBulkStatus</a></li></ul>
+    <h2><a href="index.html">Home</a></h2><h3>Global</h3><ul><li><a href="global.html#cleanBill">cleanBill</a></li><li><a href="global.html#cleanBillStatus">cleanBillStatus</a></li><li><a href="global.html#getBill">getBill</a></li><li><a href="global.html#getBillStatus">getBillStatus</a></li><li><a href="global.html#getBulk">getBulk</a></li><li><a href="global.html#getBulkStatus">getBulkStatus</a></li><li><a href="global.html#printBill">printBill</a></li></ul>
 </nav>
 
 <br class="clear">
 
 <footer>
-    Documentation generated by <a href="https://github.com/jsdoc3/jsdoc">JSDoc 3.5.5</a> on Wed Jan 31 2018 12:10:33 GMT-0500 (EST)
+    Documentation generated by <a href="https://github.com/jsdoc3/jsdoc">JSDoc 3.5.5</a> on Thu Feb 01 2018 11:16:57 GMT-0500 (EST)
 </footer>
 
 <script> prettyPrint(); </script>
