@@ -29,6 +29,12 @@ describe('getBulkStatus', function() {
     });
   });
 
+  it('should throw an error if the billType is valid but the options are not', function() {
+    expect(() => {
+      getBulkStatus("hr", (res) => {}, {congress: 111});
+    }).to.throw(TypeError);
+  });
+
   it('should return an array if the billType is valid and options are supplied', function() {
     getBulkStatus("hr", (res) => {
       expect(res).to.be.an("array").that.is.not.empty;
