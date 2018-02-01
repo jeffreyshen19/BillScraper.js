@@ -10,4 +10,5 @@ Features to implement
 * Add error handler if there is no web connection
 * Add examples to README
 * Add mongoDB database
-* generateDatabase.js which scrapes all bills and generates the entire database. 
+* generateDatabase.js which scrapes all bills and generates the entire database.
+* Autotag bills
