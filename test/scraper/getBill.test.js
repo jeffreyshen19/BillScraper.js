@@ -28,4 +28,16 @@ describe('getBill', function() {
       expect(res).to.be.an("object").that.is.not.empty;
     });
   });
+
+  it('should throw an error if the billName is valid but the options are not', function() {
+    expect(() => {
+      getBill("BILLS-115hr1001ih", (res) => {}, {session: 0});
+    }).to.throw(TypeError);
+  });
+
+  it('should return an object if the billName is valid and options are valid', function() {
+    getBill("BILLS-115hr1001ih", (res) => {
+      expect(res).to.be.an("object").that.is.not.empty;
+    }, {session: 1});
+  });
 });
