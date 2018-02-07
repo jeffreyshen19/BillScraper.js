@@ -1,6 +1,6 @@
 # BillScraper.js 📝📝📝
 [![Inline docs](http://inch-ci.org/github/dwyl/hapi-auth-jwt2.svg?branch=master)](https://jeffreyshen19.github.io/BillScraper.js/out/)
-[](https://tokei.rs/b1/github/jeffreyshen19/BillScraper.js)
+[](https://tokei.rs/b1/github/jeffreyshen19/BillScraper.js) [![Build Status](https://travis-ci.org/jeffreyshen19/BillScraper.js.svg?branch=master)](https://travis-ci.org/jeffreyshen19/BillScraper.js)
 
 A JavaScript API to scrape and analyze bills in Congress. Works for bills from the 113th, 114th, and 115th congress.
 
