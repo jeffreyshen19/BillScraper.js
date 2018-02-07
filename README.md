@@ -19,7 +19,7 @@ The current repository for bulk bill data is horrible to use for both citizens a
 
 
 ## Documentation
-View documentation [here](https://jeffreyshen19.github.io/BillScraper.js/out/).
+Documentation for individual functions is available  [here](https://jeffreyshen19.github.io/BillScraper.js/out/).
 
 ## Table of Contents
 
