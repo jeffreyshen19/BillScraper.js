@@ -1,1 +1,10 @@
 node_modules
+package.json
+README.md
+TODO.md
+package-lock.json
+CONTRIBUTING.md
+CODE_OF_CONDUCT.md
+misc
+runner
+coverage
