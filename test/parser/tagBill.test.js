@@ -21,7 +21,7 @@ describe('tagBill', function() {
 
   it('should throw an error if the bill is an invalid object', function() {
     expect(() => {
-      tagBill({entry1: 'testing' entry2: 'error' entry3: 'handling'}, (res) => {});
+      tagBill({entry1: 'testing', entry2: 'error', entry3: 'handling'}, (res) => {});
     }).to.throw(Error)
   })
 

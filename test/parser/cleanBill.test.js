@@ -20,7 +20,7 @@ describe('cleanBill', function() {
 
   it('should throw an error if the bill is an invalid object', function() {
     expect(() => {
-      cleanBill({entry1: 'testing' entry2: 'error' entry3: 'handling'}, (res) => {});
+      cleanBill({entry1: 'testing', entry2: 'error', entry3: 'handling'}, (res) => {});
     }).to.throw(Error)
   })
 
