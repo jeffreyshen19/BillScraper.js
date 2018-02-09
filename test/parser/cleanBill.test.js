@@ -18,6 +18,12 @@ describe('cleanBill', function() {
     }).to.throw(TypeError);
   });
 
+  it('should throw an error if the bill is an invalid object', function() {
+    expect(() => {
+      cleanBill({entry1: 'testing', entry2: 'error', entry3: 'handling'}, (res) => {});
+    }).to.throw(Error)
+  })
+
   it('should return an object if the bill is valid', function(){
     getBill("BILLS-115hr1001ih", (res) => {
       cleanBill(res, function(cleanedRes){

@@ -2,6 +2,7 @@ var billScraper = require("../");
 
 billScraper.getBill("BILLS-113hr1033rs", function(res){
  billScraper.printBill(res, function(parsedResult){
+   console.log(parsedResult);
    billScraper.tagBill(parsedResult, function(tags){
       console.log(tags);
    });

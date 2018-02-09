@@ -32,6 +32,7 @@
   },
   "dependencies": {
     "htmlparser": "^1.7.7",
+    "mongoose": "^5.0.4",
     "nlcst-to-string": "^2.0.1",
     "request": "^2.83.0",
     "retext": "^5.0.0",
