@@ -1,6 +1,7 @@
-var mongoose = require('mongoose');
-
 module.exports = {
+  // **Database**
+    createBill: require("./lib/database/createBill"),
+    
   // **Scraper**
     //Status
     getBulkStatus: require("./lib/scraper/getBulkStatus.js"),
