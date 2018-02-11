@@ -31,6 +31,8 @@ The government hosts bulk data for all congressional bills at [gpo.gov/fdsys/bul
   :-----------------------:|:-----------------------:
   ![XML](misc/xml.png)     |  ![JSON](misc/json.png)
 
+  For more detailed examples, visit [examples/get_bills.js](examples/get_bills.js).
+
  * **Parses bills for key points and ideas**: This project generates "tags" for bills, allowing them to more easily searched. For instance, searching for all bills tagged with "battlefield".
 
   ```
@@ -47,9 +49,22 @@ The government hosts bulk data for all congressional bills at [gpo.gov/fdsys/bul
   //Will return ['battlefield', 'sites','war','section','land','subsection','period','funds','appropriation','protection','revolutionary','public','sub','term','nations','civil','preservation','service','sellers','prohibition','purposes','person','entity','matter','influence','law','ratification','policy'];
   ```
 
-  For more detailed examples, visit `examples/tag_bills.js`
+  For more detailed examples, visit [examples/tag_bills.js](examples/tag_bill.js).
 
- * Powerful filtering and searching.
+ * **Generates a searchable Mongo database of bills**: For example, the following code will locally cache a database (see photo below) of parsed, searchable bills.
+
+  ```
+  var billScraper = require("bill-scraper");
+  var mongoose = require("mongoose");
+
+  mongoose.connect("mongodb://localhost/bills");
+  billScraper.generateDB("hr", 115, 1);
+  ```
+
+  ![Database](misc/database.png)
+
+  For documentation on the Bill struct stored in the database, visit [BILL_TEMPLATE.md](docs/BILL_TEMPLATE.md) in `docs`, for more detailed examples, visit [examples/database.js](examples/database.js), and for information on searching bills, see the examples in [examples/search_bills.js](examples/search_bills.js).
+
 
 ### Documentation
 * To get started, visit [GET_STARTED.md](docs/GET_STARTED.md) in `docs`.
