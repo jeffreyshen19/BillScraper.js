@@ -2,8 +2,8 @@
 
 var assert = require('chai').assert;
 var expect = require('chai').expect;
-var cleanBill = require("../../lib/parser/cleanBill.js");
-var getBill = require("../../lib/scraper/getBill.js");
+var cleanBill = require("../../lib/parser/cleanBill");
+var getBill = require("../../lib/scraper/getBill");
 
 describe('cleanBill', function() {
   it('should throw an error if bill is not an object', function() {
