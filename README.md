@@ -44,6 +44,13 @@ This repository encourages all users to contribute. Please read the [Code of Con
 
 ### Contributors
 
+* [Jeffrey Shen](https://github.com/jeffreyshen19): Initial development. Currently maintains the code.
+* [Amanda Li](https://github.com/dabao12321)
+* [Malcolm Essaid](https://github.com/malcolmessaid)
+* [Ryan Greenberg](https://github.com/optomal7)
+
+View the full list of contributors [here](https://github.com/jeffreyshen19/BillScraper.js/graphs/contributors).
+
 ### License
 This repository is licensed as CC0. See the [LICENSE](./LICENSE) for more information.
 
