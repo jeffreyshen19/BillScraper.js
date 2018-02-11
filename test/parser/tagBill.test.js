@@ -22,8 +22,18 @@ describe('tagBill', function() {
   it('should throw an error if the bill is an invalid object', function() {
     expect(() => {
       tagBill({entry1: 'testing', entry2: 'error', entry3: 'handling'}, (res) => {});
-    }).to.throw(Error)
-  })
+    }).to.throw(Error);
+  });
+
+  it('should limit the size of tags', function() {
+    getBill("BILLS-113hr1033rs", function(res){
+      printBill(res, function(parsedResult){
+        tagBill(parsedResult, function(tags){
+          expect(tags.length).to.equal(15);
+       }, {maxTags: 15});
+     });
+    }, {session: 2});
+  });
 
   it('should return an object if the bill is valid', function(){
     getBill("BILLS-113hr1033rs", function(res){
