@@ -1,7 +1,8 @@
 module.exports = {
   // **Database**
     createBill: require("./lib/database/createBill"),
-    
+    generateDB: require("./lib/database/generateDB"),
+
   // **Scraper**
     //Status
     getBulkStatus: require("./lib/scraper/getBulkStatus.js"),
