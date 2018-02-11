@@ -1,4 +1,4 @@
-var billScraper = require("bill-scraper");
+var billScraper = require("./");
 
 billScraper.getBill("BILLS-113hr1033rs", function(res){
  billScraper.printBill(res, function(parsedResult){
