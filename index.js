@@ -2,6 +2,7 @@ module.exports = {
   // **Database**
     createBill: require("./lib/database/createBill"),
     generateDB: require("./lib/database/generateDB"),
+    Bill: require("./lib/database/models/Bill"),
 
   // **Scraper**
     //Status
