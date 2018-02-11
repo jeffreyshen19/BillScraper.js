@@ -2,7 +2,7 @@
 
 var assert = require('chai').assert;
 var expect = require('chai').expect;
-var getBillStatus = require("../../lib/scraper/getBillStatus.js");
+var getBillStatus = require("../../lib/scraper/getBillStatus");
 
 describe('getBillStatus', function() {
   it('should throw an error if billName is not a string', function() {
