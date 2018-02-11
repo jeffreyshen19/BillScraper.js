@@ -7,6 +7,7 @@ A NPM module to scrape and analyze bills in Congress. Works for bills from the 1
 
 * `docs`: Holds markdown files that explain the project in more detail.
 * `examples`: Holds example code.
+* `example_outputs`: Holds example outputs.
 * `lib`: Holds all Javascript files
 * `misc`: Hold all graphics for the README.md
 * `test`: Holds all unit tests.
