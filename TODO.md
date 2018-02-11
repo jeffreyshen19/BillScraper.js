@@ -9,3 +9,4 @@ Features to implement
 * Get code coverage improved
 * Ignore examples folder for code coverage.
 * Add a database of bill statuses
+* Fix getBillStatus clean

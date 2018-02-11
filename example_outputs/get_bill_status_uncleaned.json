@@ -1,0 +1,186 @@
+{
+  "cosponsors": [{
+    "item": [{
+      "lastName": ["Kildee"],
+      "firstName": ["Daniel"],
+      "sponsorshipWithdrawnDate": [""],
+      "isOriginalCosponsor": ["True"],
+      "district": ["5"],
+      "party": ["D"],
+      "fullName": ["Rep. Kildee, Daniel T. [D-MI-5]"],
+      "middleName": ["T."],
+      "state": ["MI"],
+      "bioguideId": ["K000380"],
+      "sponsorshipDate": ["2017-02-09"],
+      "identifiers": [{
+        "lisID": ["2134"],
+        "gpoId": [""],
+        "bioguideId": ["K000380"]
+      }]
+    }]
+  }],
+  "congress": ["115"],
+  "committees": [{
+    "billCommittees": [{
+      "item": [{
+        "chamber": ["House"],
+        "name": ["Ways and Means Committee"],
+        "systemCode": ["hswm00"],
+        "activities": [{
+          "item": [{
+            "date": ["2017-02-09T19:32:40Z"],
+            "name": ["Referred to"]
+          }]
+        }],
+        "type": ["Standing"],
+        "subcommittees": [""]
+      }]
+    }]
+  }],
+  "constitutionalAuthorityStatementText": ["<pre>From the Congressional Record Online through the Government Publishing Office [<a href='http://www.gpo.gov'>www.gpo.gov</a>]By Mr. WALBERG:H.R. 999.Congress has the power to enact this legislation pursuantto the following:Article 1, Section 8.Clause 1: The Congress shall have the Power to lay andcollect Taxes, Duties, Imposts and Excises, to pay the Debtsand provide for the common Defence and general Welfare of theUnited States; but all Duties, Imposts, and Excises shall beuniform throughout the United States;Clause 18: To make all Laws which shall be necessary andproper for carrying into Execution the foregoing Powers, andall other Powers vested by this Constitution in theGovernment of the United States, or in any Department orOfficer thereof.[Page H1100]</pre>"],
+  "laws": [""],
+  "titles": [{
+    "item": [{
+      "chamberCode": [""],
+      "titleType": ["(Extracted from GPO) Short Titles as Introduced"],
+      "parentTitleType": [""],
+      "chamberName": [""],
+      "title": ["Helping Families Save for Education Act"]
+    }, {
+      "chamberCode": [""],
+      "titleType": ["Short Titles as Introduced"],
+      "parentTitleType": [""],
+      "chamberName": [""],
+      "title": ["Helping Families Save for Education Act"]
+    }, {
+      "chamberCode": [""],
+      "titleType": ["Official Title as Introduced"],
+      "parentTitleType": [""],
+      "chamberName": [""],
+      "title": ["To amend the Internal Revenue Code of 1986 to expand access to Coverdell education savings accounts."]
+    }, {
+      "chamberCode": [""],
+      "titleType": ["Display Title"],
+      "parentTitleType": [""],
+      "chamberName": [""],
+      "title": ["Helping Families Save for Education Act"]
+    }]
+  }],
+  "billType": ["HR"],
+  "amendments": [""],
+  "recordedVotes": [""],
+  "actions": [{
+    "item": [{
+      "committee": [{
+        "systemCode": ["hswm00"],
+        "name": ["Ways and Means Committee"]
+      }],
+      "sourceSystem": [{
+        "code": ["2"],
+        "name": ["House floor actions"]
+      }],
+      "actionDate": ["2017-02-09"],
+      "text": ["Referred to the House Committee on Ways and Means."],
+      "links": [""],
+      "type": ["IntroReferral"],
+      "actionCode": ["H11100"]
+    }, {
+      "committee": [""],
+      "sourceSystem": [{
+        "code": ["9"],
+        "name": ["Library of Congress"]
+      }],
+      "actionDate": ["2017-02-09"],
+      "text": ["Introduced in House"],
+      "links": [""],
+      "type": ["IntroReferral"],
+      "actionCode": ["Intro-H"]
+    }, {
+      "committee": [""],
+      "sourceSystem": [{
+        "code": ["9"],
+        "name": ["Library of Congress"]
+      }],
+      "actionDate": ["2017-02-09"],
+      "text": ["Introduced in House"],
+      "links": [""],
+      "type": ["IntroReferral"],
+      "actionCode": ["1000"]
+    }],
+    "actionByCounts": [{
+      "houseOfRepresentatives": ["3"]
+    }],
+    "actionTypeCounts": [{
+      "billReferrals": ["1"],
+      "introducedInTheHouse": ["1"],
+      "introducedInHouse": ["1"]
+    }]
+  }],
+  "introducedDate": ["2017-02-09"],
+  "relatedBills": [""],
+  "committeeReports": [""],
+  "calendarNumbers": [""],
+  "billNumber": ["999"],
+  "summaries": [{
+    "billSummaries": [{
+      "item": [{
+        "text": ["<p><strong>Helping Families Save for Education Act</strong> </p> <p> This bill amends the Internal Revenue Code, with respect to Coverdell education savings accounts, to: (1) increase the age limit for beneficiaries of such accounts after which contributions may not be made from age 18 to age 22, and (2) increase the maximum contribution limit in any taxable year from $2,000 to $10,000.</p>"],
+        "versionCode": ["00"],
+        "actionDate": ["2017-02-09"],
+        "name": ["Introduced in House"],
+        "actionDesc": ["Introduced in House"],
+        "lastSummaryUpdateDate": ["2017-02-24T14:18:47Z"],
+        "updateDate": ["2017-02-09T05:00:00Z"]
+      }]
+    }]
+  }],
+  "cboCostEstimates": [""],
+  "updateDate": ["2018-02-06T16:41:22Z"],
+  "policyArea": [{
+    "name": ["Taxation"]
+  }],
+  "latestAction": [{
+    "text": ["Referred to the House Committee on Ways and Means."],
+    "actionDate": ["2017-02-09"],
+    "links": [""]
+  }],
+  "version": ["1.0.0"],
+  "subjects": [{
+    "billSubjects": [{
+      "policyArea": [{
+        "name": ["Taxation"]
+      }],
+      "legislativeSubjects": [{
+        "item": [{
+          "name": ["Higher education"]
+        }, {
+          "name": ["Income tax exclusion"]
+        }, {
+          "name": ["Student aid and college costs"]
+        }]
+      }]
+    }]
+  }],
+  "title": ["Helping Families Save for Education Act"],
+  "originChamber": ["House"],
+  "sponsors": [{
+    "item": [{
+      "byRequestType": [""],
+      "district": ["7"],
+      "party": ["R"],
+      "fullName": ["Rep. Walberg, Tim [R-MI-7]"],
+      "lastName": ["Walberg"],
+      "state": ["MI"],
+      "bioguideId": ["W000798"],
+      "middleName": [""],
+      "firstName": ["Tim"],
+      "identifiers": [{
+        "bioguideId": ["W000798"],
+        "gpoId": ["7992"],
+        "lisID": ["1855"]
+      }]
+    }]
+  }],
+  "notes": [""],
+  "createDate": ["2017-02-10T04:45:53Z"]
+}

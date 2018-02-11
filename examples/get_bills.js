@@ -36,7 +36,7 @@ billScraper.getBulk("hr", function(res){ //hr is one of the valid bill types. Fo
 });
 
 //Getting a list of all bill statuses
-billScraper.getBulk("hr", function(res){ //hr is one of the valid bill types. For more information see docs/VALID_BILL_TYPES
+billScraper.getBulkStatus("hr", function(res){ //hr is one of the valid bill types. For more information see docs/VALID_BILL_TYPES
   //res is an array
 }, {
   congress: 115, //Can be either 113, 114, or 115.
