@@ -9,7 +9,6 @@ A JavaScript API to scrape and analyze bills in Congress. Works for bills from t
 * `examples`: Holds example code.
 * `lib`: Holds all Javascript files
 * `misc`: Hold all graphics for the README.md
-* `runner`: Holds javascript files used to test the library while developing
 * `test`: Holds all unit tests.
 
 ## Why?
@@ -68,7 +67,6 @@ The government hosts bulk data for all congressional bills at [gpo.gov/fdsys/bul
 
 ### Documentation
 * To get started, visit [GET_STARTED.md](docs/GET_STARTED.md) in `docs`.
-* For a high-level overview of how the library is structured and developed, visit [ARCHITECTURE.md](docs/ARCHITECTURE.md) in `docs`.
 * For examples of how to use the library, visit `examples`.
 * Documentation for all the methods is available [here](https://jeffreyshen19.github.io/BillScraper.js/out/).
 
