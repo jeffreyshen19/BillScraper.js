@@ -13,18 +13,43 @@ A JavaScript API to scrape and analyze bills in Congress. Works for bills from t
 * `test`: Holds all unit tests.
 
 ## Why?
-The current repository for bulk bill data is horrible to use for both citizens and developers. As shown in the gif below, bills are uploaded as XML files in a giant folder, which makes programming any projects that involves congressional data cumbersome.
-
-![Gif](./misc/explanation_of_the_problem.gif)
+The government hosts bulk data for all congressional bills at [gpo.gov/fdsys/bulkdata](https://www.gpo.gov/fdsys/bulkdata). However, this repository is horrible to use for developers, as bills are uploaded to unpredictable URLS as XML files. Each bill file is too structured, as XML style elements like paragraphs, bold text, and quotes are preserved, making it hard to parse the actual text of a bill.  
 
 ### What does this project do
- * Returns full Congressional bill text and metadata from Congress.gov as JSON. For example, it converts the XML (on the left) into concise, usable JSON (on the right)
+ * **Returns full Congressional bill text and metadata from Congress.gov as JSON**. For example, the following code will convert the XML (on the top) into the JSON (on the bottom)
 
- ![picture](./misc/what-does-this-library-do.png)
+  ```
+  var billScraper = require("bill-scraper");
 
- * Parses bills for key points and ideas.
+  billScraper.getBill("BILLS-113hr1033rs", function(res){
+    billScraper.printBill(res, function(parsedResult){
+      console.log(JSON.stringify(parsedResult));
+    });
+  }, {session: 2});
+  ```
+  XML                      |  JSON                    
+  :-----------------------:|:-----------------------:
+  ![XML](misc/xml.png)     |  ![JSON](misc/json.png)
+
+ * **Parses bills for key points and ideas**: This project generates "tags" for bills, allowing them to more easily searched. For instance, searching for all bills tagged with "battlefield".
+
+  ```
+  var billScraper = require("bill-scraper");
+
+  billScraper.getBill("BILLS-113hr1033rs", function(res){
+   billScraper.printBill(res, function(parsedResult){
+     billScraper.tagBill(parsedResult, function(tags){
+        console.log(tags);
+     });
+   });
+  }, {session: 2});
+
+  //Will return ['battlefield', 'sites','war','section','land','subsection','period','funds','appropriation','protection','revolutionary','public','sub','term','nations','civil','preservation','service','sellers','prohibition','purposes','person','entity','matter','influence','law','ratification','policy'];
+  ```
+
+  For more detailed examples, visit `examples/tag_bills.js`
+
  * Powerful filtering and searching.
-
 
 ### Documentation
 * To get started, visit [GET_STARTED.md](docs/GET_STARTED.md) in `docs`.
