@@ -42,6 +42,15 @@ This repository encourages all users to contribute. Please read the [Code of Con
 
 ### Relevant libraries used
 
+* [chai](https://github.com/chaijs/chai) and [mocha](https://github.com/mochajs/mocha): To run unit tests
+* [jsdoc](https://github.com/jsdoc3/jsdoc): To generate function-level documentation
+* [istanbul](https://github.com/gotwarlost/istanbul) and [codecov](https://github.com/codecov/codecov-node): To generate code coverage reports
+* [mongoose](https://github.com/Automattic/mongoose) and [mongo](https://github.com/mongodb/mongo): For the database
+* [retext](https://github.com/retextjs/retext) and [retext-keywords](https://github.com/retextjs/retext-keywords): To automatically tag bills by subject
+* [htmlparser](https://github.com/tautologistics/node-htmlparser), [request](https://github.com/request/request), [soupselect](https://github.com/harryf/node-soupselect), and [xml2js](https://github.com/Leonidas-from-XIV/node-xml2js) for web scraping.
+
+View the [package.json](package.json) for the full list of dependencies.
+
 ### Contributors
 
 * [Jeffrey Shen](https://github.com/jeffreyshen19): Initial development. Currently maintains the code.
