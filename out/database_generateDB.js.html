@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
     <meta charset="utf-8">
-    <title>JSDoc: Home</title>
+    <title>JSDoc: Source: database/generateDB.js</title>
 
     <script src="scripts/prettify/prettify.js"> </script>
     <script src="scripts/prettify/lang-css.js"> </script>
@@ -17,32 +17,49 @@
 
 <div id="main">
 
-    <h1 class="page-title">Home</h1>
+    <h1 class="page-title">Source: database/generateDB.js</h1>
 
     
 
 
 
     
+    <section>
+        <article>
+            <pre class="prettyprint source linenums"><code>var createBill = require("./createBill");
+var getBulk = require("../scraper/getBulk");
 
+var validBillTypes = ["sres", "sjres", "sconres", "s", "hres", "hr", "hjres", "hconres"];
 
-    <h3> </h3>
+/**
+ * Automatically generates the entire database of bills
+ * @example
+ * generateDB()
+ */
 
+var generateDB = function(type, congress, session){
+  getBulk(type, function(res){
+    var i = 0;
+    var interval = setInterval(function(){
+      if(i == res.length) clearInterval(interval);
+      try{
+        createBill(res[i]);
+      }
+      catch(e){
+        console.log("Unable to save " + res[i]);
+      }
+      i++;
+    }, 100);
+  }, {
+    congress: congress,
+    session: session
+  });
+};
 
-
-
-
-
-
-
-
-
-    
-
-
-
-
-
+module.exports = generateDB;
+</code></pre>
+        </article>
+    </section>
 
 
 
