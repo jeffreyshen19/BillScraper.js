@@ -49,7 +49,7 @@ The government hosts bulk data for all congressional bills at [gpo.gov/fdsys/bul
   //Will return ['battlefield', 'sites','war','section','land','subsection','period','funds','appropriation','protection','revolutionary','public','sub','term','nations','civil','preservation','service','sellers','prohibition','purposes','person','entity','matter','influence','law','ratification','policy'];
   ```
 
-  For more detailed examples, visit [examples/tag_bills.js](examples/tag_bill.js).
+  For more detailed examples, visit [examples/tag_bills.js](examples/tag_bills.js).
 
  * **Generates a searchable Mongo database of bills**: For example, the following code will locally cache a database (see photo below) of parsed, searchable bills.
 
