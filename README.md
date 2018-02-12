@@ -16,7 +16,7 @@ A NPM module to scrape and analyze bills in Congress. Works for bills from the 1
 The government hosts bulk data for all congressional bills at [gpo.gov/fdsys/bulkdata](https://www.gpo.gov/fdsys/bulkdata). However, this repository is horrible to use for developers, as bills are uploaded to unpredictable URLS as XML files. Each bill file is too structured, as XML style elements like paragraphs, bold text, and quotes are preserved, making it hard to parse the actual text of a bill.  
 
 ### What does this project do
- * **Returns full Congressional bill text and metadata from Congress.gov as JSON**. For example, the following code will convert the XML (on the top) into the JSON (on the bottom)
+ * **Returns full Congressional bill text and metadata from Congress.gov as JSON**. This library can scrape both the actual bill text (*bills*) and meta information such as cosponsors, amendments, and committees (*bill statuses*). For example, the following code will convert the XML (on the top) into the JSON (on the bottom)
 
   ```
   var billScraper = require("bill-scraper");
