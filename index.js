@@ -24,5 +24,5 @@ module.exports = {
 
   //Fields
   validBillTypes: ["s", "hr"],
-  validCongress:[113, 114, 115]
+  validCongresses: [113, 114, 115]
 };
