@@ -12,7 +12,8 @@ Every element stored in the database will be a JSON object of the following temp
   "text": String,
   "title": string,
   "chamber": String,
-  "number": String
+  "number": String,
+  "numberInt": Int32
 }
 ```
 
@@ -26,3 +27,4 @@ Every element stored in the database will be a JSON object of the following temp
 * `title`: Official bill title
 * `chamber`: What chamber the bill was passed in.
 * `number`: String version of the bill number (i.e. H. R. 1107)
+* `numberInt`: Number version of the bill number (i.e. 1107)
