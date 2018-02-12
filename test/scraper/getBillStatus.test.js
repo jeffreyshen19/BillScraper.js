@@ -24,7 +24,7 @@ describe('getBillStatus', function() {
   });
 
   it('should return an object if the billName is valid', function() {
-    getBillStatus("BILLSTATUS-115sres99", (res) => {
+    getBillStatus("BILLSTATUS-115hr999", (res) => {
       expect(res).to.be.an("object").that.is.not.empty;
     });
   });
