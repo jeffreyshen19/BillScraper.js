@@ -23,5 +23,6 @@ module.exports = {
     tagBill: require("./lib/parser/tagBill"),
 
   //Fields
-  validBillTypes: ["s", "hr"]
+  validBillTypes: ["s", "hr"],
+  validCongresses: [113, 114, 115]
 };
