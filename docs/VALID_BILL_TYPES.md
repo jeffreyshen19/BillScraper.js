@@ -53,5 +53,5 @@ one house. They are also used to express the sentiments of a single house. For e
 resolution may offer condolences to the family of a deceased member of Congress, or it may
 give "advice" on foreign policy or other executive business.
 
-Additional information about bill types and versions is available at
-<http://www.gpo.gov/help/index.html#about_congressional_bills.htm>.
+[Additional information](http://www.gpo.gov/help/index.html#about_congressional_bills.htm)
+about bill types and versions.
