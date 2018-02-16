@@ -23,7 +23,7 @@ Every element stored in the database will be a JSON object of the following temp
 * `tags`: An array of tags
 * `congress`: Which congress this bill was passed in. This can be 113, 114, or 115
 * `session`: Which session of congress was this bill passed in. This can be 1 or 2
-* `type`: What type of bill is this. See VALID_BILL_TYPES.md for more information
+* `type`: What type of bill is this. See [VALID_BILL_TYPES.md](https://github.com/jeffreyshen19/BillScraper.js/blob/master/docs/VALID_BILL_TYPES.md) for more information
 * `url`: Path to the original XML bill file
 * `text`: Parsed bill text
 * `title`: Official bill title
