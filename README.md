@@ -97,6 +97,8 @@ View the [package.json](package.json) for the full list of dependencies.
 * [Amanda Li](https://github.com/dabao12321)
 * [Malcolm Essaid](https://github.com/malcolmessaid)
 * [Ryan Greenberg](https://github.com/optomal7)
+* [Herbie Turner](https://github.com/hturner08)
+* [Kevin Sun](https://github.com/ksun0)
 
 View the full list of contributors [here](https://github.com/jeffreyshen19/BillScraper.js/graphs/contributors).
 
