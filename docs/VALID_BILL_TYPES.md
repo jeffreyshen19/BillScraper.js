@@ -1,5 +1,11 @@
 # Valid bill types
-This library can parse 2 distinct types of bills: "hr", "s"
+This library can parse 2 distinct types of bills: "hr", "s". To access an array of valid bill types from the library:
+
+```
+var billScraper = require("bill-scraper");
+billScraper.validBillTypes
+```
+
 Below is more detailed information about each bill type from the GPO.gov website:
 
  - House Bill (HR)
