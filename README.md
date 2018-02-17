@@ -78,7 +78,7 @@ This repository encourages all users to contribute. Please read the [Code of Con
 
 ### Datasets used
 
-* [GPO Bill bulk data](https://www.gpo.gov/fdsys/bulkdata)
+* [GPO Bill bulk data](https://www.gpo.gov/fdsys/bulkdata): I am using the "Congressional Bills" and "Bill Statuses" folder.
 
 ### Relevant libraries used
 
