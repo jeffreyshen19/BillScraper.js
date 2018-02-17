@@ -4,8 +4,9 @@
   "description": "A JavaScript API to scrape and analyze bills in Congress.",
   "main": "index.js",
   "scripts": {
-    "test": "mocha --recursive",
-    "docs": "jsdoc lib/**/*.js"
+    "test": "mocha --recursive && npm run lint",
+    "docs": "jsdoc lib/**/*.js",
+    "lint": "jshint lib/**/*.js && jshint index.js && jshint lib/**/**/*.js"
   },
   "repository": {
     "type": "git",
@@ -28,6 +29,7 @@
     "codecov": "^3.0.0",
     "istanbul": "^0.4.5",
     "jsdoc": "^3.5.5",
+    "jshint": "^2.9.5",
     "mocha": "^5.0.0"
   },
   "dependencies": {
