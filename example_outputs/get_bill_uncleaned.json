@@ -1,0 +1,312 @@
+{
+  "$": {
+    "bill-stage": "Reported-in-Senate",
+    "bill-type": "olc",
+    "dms-id": "H57F9958C39FF446B9708A3F882420EF1",
+    "public-private": "public",
+    "stage-count": "1"
+  },
+  "form": [{
+    "distribution-code": [{
+      "_": "II",
+      "$": {
+        "display": "yes"
+      }
+    }],
+    "calendar": ["Calendar No. 398"],
+    "congress": ["113th CONGRESS"],
+    "session": ["2d Session"],
+    "legis-num": ["H. R. 1033"],
+    "associated-doc": [{
+      "_": "[Report No. 113–172]",
+      "$": {
+        "role": "report"
+      }
+    }],
+    "current-chamber": [{
+      "_": "IN THE SENATE OF THE UNITED STATES",
+      "$": {
+        "display": "yes"
+      }
+    }],
+    "action": [{
+      "action-date": [{
+        "_": "April 10, 2013",
+        "$": {
+          "date": "20130410"
+        }
+      }],
+      "action-desc": [{
+        "_": "Received; read twice and referred to the ",
+        "committee-name": [{
+          "_": "Committee on Energy and Natural Resources",
+          "$": {
+            "added-display-style": "italic",
+            "committee-id": "SSEG00",
+            "deleted-display-style": "strikethrough"
+          }
+        }]
+      }]
+    }, {
+      "$": {
+        "stage": "Reported-in-Senate"
+      },
+      "action-date": ["May 22, 2014"],
+      "action-desc": [{
+        "_": "Reported by , with an amendment",
+        "sponsor": [{
+          "_": "Ms. Landrieu",
+          "$": {
+            "name-id": "S258"
+          }
+        }]
+      }],
+      "action-instruction": ["Omit the part struck through and insert the part printed in italic"]
+    }],
+    "legis-type": ["AN ACT"],
+    "official-title": [{
+      "_": "To authorize the acquisition and protection of nationally significant battlefields and associated\n\t\t\t sites of the Revolutionary War and the War of 1812 under the American\n\t\t\t Battlefield Protection Program.",
+      "$": {
+        "display": "yes"
+      }
+    }]
+  }],
+  "legis-body": [{
+    "$": {
+      "id": "H161D1350F6B24724AB3CEA94B9C33F88",
+      "style": "OLC"
+    },
+    "section": [{
+      "$": {
+        "id": "H4D7EFA17921940CF8D45582AEB388210",
+        "section-type": "section-one"
+      },
+      "enum": ["1."],
+      "header": ["Short title"],
+      "text": [{
+        "_": "This Act may be cited as the\n\t\t\t \"American Battlefield Protection\n\t\t\t Program Amendments Act of 2013\".",
+        "$": {
+          "display-inline": "no-display-inline"
+        }
+      }]
+    }, {
+      "$": {
+        "id": "H5505B8F9C8644C4399939FC50A252495"
+      },
+      "enum": ["2."],
+      "header": ["Revolutionary War\n\t\t\t and War of 1812 American battlefield protection"],
+      "text": [{
+        "_": "Section 7301(c) of the Omnibus Public Land\n\t\t\t Management Act of 2009 () is amended as\n\t\t\t follows:",
+        "$": {
+          "display-inline": "no-display-inline"
+        },
+        "external-xref": [{
+          "_": "Public Law 111–11",
+          "$": {
+            "legal-doc": "public-law",
+            "parsable-cite": "pl/111/11"
+          }
+        }]
+      }],
+      "paragraph": [{
+        "$": {
+          "id": "H3929120C8D344EA793CE015D10AE75A2"
+        },
+        "enum": ["(1)"],
+        "text": ["In paragraph\n\t\t\t (1)—"],
+        "subparagraph": [{
+          "$": {
+            "id": "H18807E3058394578BF8D3D96F1E4AAC6"
+          },
+          "enum": ["(A)"],
+          "text": ["by striking\n\t\t\t subparagraph (A) and inserting the following:"],
+          "quoted-block": [{
+            "$": {
+              "display-inline": "no-display-inline",
+              "id": "HD96ABCCB33F44DC2BD4B0B75760390D3",
+              "style": "OLC"
+            },
+            "subparagraph": [{
+              "$": {
+                "id": "H1535A68712FE47919947BC850DBF4FAE"
+              },
+              "enum": ["(A)"],
+              "header": ["Battlefield\n\t\t\t\treport"],
+              "text": ["The term \"battlefield report\" means,\n\t\t\t\tcollectively—"],
+              "clause": [{
+                "$": {
+                  "id": "H5C27F71C02F44BAE9053B48D9E3E8389"
+                },
+                "enum": ["(i)"],
+                "text": ["the report\n\t\t\t\tentitled \"Report on the Nation’s Civil War Battlefields\", prepared\n\t\t\t\tby the Civil War Sites Advisory Commission, and dated July 1993;\n\t\t\t and"]
+              }, {
+                "$": {
+                  "id": "H96E07BD5C3FF41E7AEA43BCBD35AE088"
+                },
+                "enum": ["(ii)"],
+                "text": ["the report\n\t\t\t\tentitled \"Report to Congress on the Historic Preservation of Revolutionary\n\t\t\t\tWar and War of 1812 Sites in the United States\", prepared by the National\n\t\t\t\tPark Service, and dated September 2007."]
+              }]
+            }],
+            "after-quoted-block": [";\n\t\t\t\tand"]
+          }]
+        }, {
+          "$": {
+            "id": "H0CB334ED67784FD4A07D47C3F28601C8"
+          },
+          "enum": ["(B)"],
+          "text": ["in subparagraph\n\t\t\t (C)(ii), by striking \"Battlefield Report\" and inserting\n\t\t\t \"battlefield report\"."]
+        }]
+      }, {
+        "$": {
+          "id": "HA477AE478AF54D32A28C8780120EE399"
+        },
+        "enum": ["(2)"],
+        "text": ["In paragraph (2),\n\t\t\t by inserting \"eligible sites or\" after\n\t\t\t \"acquiring\"."]
+      }, {
+        "$": {
+          "id": "H55ADA5BB45A94E1AA2A76C0BE191AF6A"
+        },
+        "enum": ["(3)"],
+        "text": [{
+          "_": "In paragraph (3), by inserting \"an\n\t\t\t eligible site or\" after \"acquire\".",
+          "$": {
+            "display-inline": "yes-display-inline"
+          }
+        }]
+      }, {
+        "$": {
+          "id": "HE4C2C6B8D35D4D79B1714F929A5BB8B5"
+        },
+        "enum": ["(4)"],
+        "text": [{
+          "_": "In paragraph (4), by inserting \"an\n\t\t\t eligible site or\" after \"acquiring\".",
+          "$": {
+            "display-inline": "yes-display-inline"
+          }
+        }]
+      }, {
+        "$": {
+          "id": "HF405ADF206A448CDA023DF3E0E146A4D"
+        },
+        "enum": ["(5)"],
+        "text": ["In paragraph (5),\n\t\t\t by striking \"An\" and inserting \"An eligible site or\n\t\t\t an\"."]
+      }, {
+        "$": {
+          "id": "H8904164DDDC54B828DD97F3AC73CBDC1"
+        },
+        "enum": ["(6)"],
+        "text": ["By redesignating\n\t\t\t paragraph (6) as paragraph (9)."]
+      }, {
+        "$": {
+          "id": "H637EAE82294740949957FA3F7E5259E7"
+        },
+        "enum": ["(7)"],
+        "text": ["By inserting after\n\t\t\t paragraph (5) the following new paragraphs:"],
+        "quoted-block": [{
+          "$": {
+            "display-inline": "no-display-inline",
+            "id": "HBD8C0514D5924B0CBDF04882D4289A4A",
+            "style": "OLC"
+          },
+          "paragraph": [{
+            "$": {
+              "id": "H94E2476F05CE4DB4B12D892685D7E6D1"
+            },
+            "enum": ["(6)"],
+            "header": ["Willing\n\t\t\t\tSellers"],
+            "text": [{
+              "_": "Acquisition of land\n\t\t\t\tor interests in land under this subsection shall be from willing\n\t\t\t sellers\n\t\t\t\tonly.",
+              "$": {
+                "display-inline": "yes-display-inline"
+              }
+            }]
+          }, {
+            "$": {
+              "id": "H61A0D797F6BC4467A11578250725E6B6"
+            },
+            "enum": ["(7)"],
+            "header": ["Report"],
+            "text": [{
+              "_": "Not later than 5 years after the date of\n\t\t\t\tthe enactment of this subsection, the Secretary shall submit to\n\t\t\t Congress a\n\t\t\t\treport on the activities carried out under this subsection,\n\t\t\t including a\n\t\t\t\tdescription of—",
+              "$": {
+                "display-inline": "yes-display-inline"
+              }
+            }],
+            "subparagraph": [{
+              "$": {
+                "id": "H44A085FB75794C34B64B7D309AD75409"
+              },
+              "enum": ["(A)"],
+              "text": ["preservation\n\t\t\t\tactivities carried out at the battlefields and associated sites\n\t\t\t identified in\n\t\t\t\tthe battlefield report during the period between publication of the\n\t\t\t battlefield\n\t\t\t\treport and the report required under this paragraph;"]
+            }, {
+              "$": {
+                "id": "H73EF7F4AE06D46F9BB4D3FE659A26664"
+              },
+              "enum": ["(B)"],
+              "text": ["changes in the\n\t\t\t\tcondition of the battlefields and associated sites during that\n\t\t\t period;\n\t\t\t\tand"]
+            }, {
+              "$": {
+                "id": "H60F77004CFE546908C9081DDE07DFDE0"
+              },
+              "enum": ["(C)"],
+              "text": ["any other relevant\n\t\t\t\tdevelopments relating to the battlefields and associated sites\n\t\t\t during that\n\t\t\t\tperiod."]
+            }]
+          }, {
+            "$": {
+              "changed": "deleted",
+              "committee-id": "SSEG00",
+              "id": "H15F0C77494294443ADDB2CADEB1FBE6D",
+              "reported-display-style": "strikethrough"
+            },
+            "enum": ["(8)"],
+            "header": ["Prohibition on\n\t\t\t\tlobbying"],
+            "subparagraph": [{
+              "$": {
+                "id": "H747395144EF647C38E4F07A4CDCBFDC5"
+              },
+              "enum": ["(A)"],
+              "header": ["In\n\t\t\t\tgeneral"],
+              "text": ["None of the funds provided pursuant to this section may\n\t\t\t\tbe used for purposes of lobbying any person or entity regarding the\n\t\t\t\timplementation of this section or be granted, awarded, contracted,\n\t\t\t or otherwise\n\t\t\t\tbe made available to any person, organization, or entity that\n\t\t\t participates in\n\t\t\t\tsuch lobbying."]
+            }, {
+              "$": {
+                "id": "H1C71E0F87075422A8BCEA6C2D6BB0D5A"
+              },
+              "enum": ["(B)"],
+              "header": ["Lobbying\n\t\t\t\tdefined"],
+              "text": ["For purposes of this paragraph, the term\n\t\t\t\t\"lobbying\" means to directly or indirectly pay for any personal\n\t\t\t\tservice, advertisement, telegram, telephone call, letter, printed\n\t\t\t or written\n\t\t\t\tmatter, or other device intended or designed to influence in any\n\t\t\t manner a\n\t\t\t\tMember of Congress, a jurisdiction, or an official of any\n\t\t\t government to favor,\n\t\t\t\tadopt, or oppose by vote or otherwise, any legislation, law,\n\t\t\t ratification,\n\t\t\t\tpolicy, land use plan (including zoning), or appropriation of funds\n\t\t\t before or\n\t\t\t\tafter the introduction of any bill, resolution, or other measure\n\t\t\t proposing such\n\t\t\t\tlegislation, law, ratification, policy, or\n\t\t\t\tappropriation."]
+            }]
+          }],
+          "after-quoted-block": [". "]
+        }, {
+          "$": {
+            "display-inline": "no-display-inline",
+            "id": "id4362E81D389E4C288CDCD910866FAE10",
+            "style": "OLC"
+          },
+          "paragraph": [{
+            "$": {
+              "changed": "added",
+              "committee-id": "SSEG00",
+              "id": "idd0422beeaea24fb49b276a75f0471e79",
+              "reported-display-style": "italic"
+            },
+            "enum": ["(8)"],
+            "header": ["Prohibition on lobbying"],
+            "text": ["None of the funds provided pursuant to this section shall be used in any way, directly or\n\t\t\t indirectly, to influence congressional action on any legislation or\n\t\t\t appropriation matters pending before Congress."]
+          }],
+          "after-quoted-block": ["."]
+        }]
+      }, {
+        "$": {
+          "id": "H1323A02340E046968EA9FD2CA1208003"
+        },
+        "enum": ["(8)"],
+        "text": ["In paragraph (9)\n\t\t\t (as redesignated by paragraph (6)), by striking \"2013\" and\n\t\t\t inserting \"2018\"."]
+      }]
+    }]
+  }],
+  "endorsement": [{
+    "action-date": ["May 22, 2014"],
+    "action-desc": ["Reported with an amendment"]
+  }]
+}

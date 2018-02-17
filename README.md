@@ -1,5 +1,6 @@
 # BillScraper.js 📝📝📝
 [![Build Status](https://travis-ci.org/jeffreyshen19/BillScraper.js.svg?branch=master)](https://travis-ci.org/jeffreyshen19/BillScraper.js) [![codecov](https://codecov.io/gh/jeffreyshen19/BillScraper.js/branch/master/graph/badge.svg)](https://codecov.io/gh/jeffreyshen19/BillScraper.js) [![npm version](https://badge.fury.io/js/bill-scraper.svg)](https://badge.fury.io/js/bill-scraper) [![Inline docs](http://inch-ci.org/github/dwyl/hapi-auth-jwt2.svg?branch=master)](https://jeffreyshen19.github.io/BillScraper.js/out/)
+[![License: CC0-1.0](https://img.shields.io/badge/License-CC0%201.0-lightgrey.svg)](http://creativecommons.org/publicdomain/zero/1.0/)
 
 A NPM module to scrape and analyze bills in Congress. Works for bills from the 113th, 114th, and 115th congress. **THIS PROJECT IS STILL UNDER DEVELOPMENT. DO NOT DOWNLOAD YET**.
 
@@ -7,6 +8,7 @@ A NPM module to scrape and analyze bills in Congress. Works for bills from the 1
 
 * `docs`: Holds markdown files that explain the project in more detail.
 * `examples`: Holds example code.
+* `example_outputs`: Holds example outputs.
 * `lib`: Holds all Javascript files
 * `misc`: Hold all graphics for the README.md
 * `test`: Holds all unit tests.
@@ -15,7 +17,7 @@ A NPM module to scrape and analyze bills in Congress. Works for bills from the 1
 The government hosts bulk data for all congressional bills at [gpo.gov/fdsys/bulkdata](https://www.gpo.gov/fdsys/bulkdata). However, this repository is horrible to use for developers, as bills are uploaded to unpredictable URLS as XML files. Each bill file is too structured, as XML style elements like paragraphs, bold text, and quotes are preserved, making it hard to parse the actual text of a bill.  
 
 ### What does this project do
- * **Returns full Congressional bill text and metadata from Congress.gov as JSON**. For example, the following code will convert the XML (on the top) into the JSON (on the bottom)
+ * **Returns full Congressional bill text and metadata from Congress.gov as JSON**. This library can scrape both the actual bill text (*bills*) and meta information such as cosponsors, amendments, and committees (*bill statuses*). For example, the following code will convert the XML (on the top) into the JSON (on the bottom)
 
   ```
   var billScraper = require("bill-scraper");

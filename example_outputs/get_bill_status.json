@@ -1,0 +1,106 @@
+{
+  "cosponsors": [{
+    "sponsorshipWithdrawnDate": "",
+    "isOriginalCosponsor": "True",
+    "district": 5,
+    "fullName": "Rep. Kildee, Daniel T. [D-MI-5]",
+    "sponsorshipDate": "2017-02-09"
+  }],
+  "congress": 115,
+  "committees": [{
+    "chamber": "House",
+    "name": "Ways and Means Committee",
+    "activities": {
+      "item": {
+        "date": "2017-02-09T19:32:40Z",
+        "name": "Referred to"
+      }
+    },
+    "type": "Standing",
+    "subcommittees": ""
+  }],
+  "laws": "",
+  "titles": [{
+    "chamberCode": "",
+    "titleType": "(Extracted from GPO) Short Titles as Introduced",
+    "parentTitleType": "",
+    "chamberName": "",
+    "title": "Helping Families Save for Education Act"
+  }, {
+    "chamberCode": "",
+    "titleType": "Short Titles as Introduced",
+    "parentTitleType": "",
+    "chamberName": "",
+    "title": "Helping Families Save for Education Act"
+  }, {
+    "chamberCode": "",
+    "titleType": "Official Title as Introduced",
+    "parentTitleType": "",
+    "chamberName": "",
+    "title": "To amend the Internal Revenue Code of 1986 to expand access to Coverdell education savings accounts."
+  }, {
+    "chamberCode": "",
+    "titleType": "Display Title",
+    "parentTitleType": "",
+    "chamberName": "",
+    "title": "Helping Families Save for Education Act"
+  }],
+  "billType": "HR",
+  "amendments": "",
+  "recordedVotes": "",
+  "actions": [{
+    "committee": {
+      "systemCode": "hswm00",
+      "name": "Ways and Means Committee"
+    },
+    "sourceSystem": {
+      "code": 2,
+      "name": "House floor actions"
+    },
+    "actionDate": "2017-02-09",
+    "text": "Referred to the House Committee on Ways and Means.",
+    "links": "",
+    "type": "IntroReferral",
+    "actionCode": "H11100"
+  }, {
+    "committee": "",
+    "sourceSystem": {
+      "code": 9,
+      "name": "Library of Congress"
+    },
+    "actionDate": "2017-02-09",
+    "text": "Introduced in House",
+    "links": "",
+    "type": "IntroReferral",
+    "actionCode": "Intro-H"
+  }, {
+    "committee": "",
+    "sourceSystem": {
+      "code": 9,
+      "name": "Library of Congress"
+    },
+    "actionDate": "2017-02-09",
+    "text": "Introduced in House",
+    "links": "",
+    "type": "IntroReferral",
+    "actionCode": 1000
+  }],
+  "introducedDate": "2017-02-09",
+  "relatedBills": "",
+  "committeeReports": "",
+  "calendarNumbers": "",
+  "billNumber": 999,
+  "summaries": "Helping Families Save for Education Act   This bill amends the Internal Revenue Code, with respect to Coverdell education savings accounts, to: (1) increase the age limit for beneficiaries of such accounts after which contributions may not be made from age 18 to age 22, and (2) increase the maximum contribution limit in any taxable year from $2,000 to $10,000.",
+  "cboCostEstimates": "",
+  "updateDate": "2018-02-06T16:41:22Z",
+  "policyArea": "Taxation",
+  "title": "Helping Families Save for Education Act",
+  "originChamber": "House",
+  "sponsors": [{
+    "byRequestType": "",
+    "district": 7,
+    "fullName": "Rep. Walberg, Tim [R-MI-7]"
+  }],
+  "notes": "",
+  "createDate": "2017-02-10T04:45:53Z"
+}

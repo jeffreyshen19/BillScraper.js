@@ -2,6 +2,7 @@ module.exports = {
   // **Database**
     createBill: require("./lib/database/createBill"),
     generateDB: require("./lib/database/generateDB"),
+    Bill: require("./lib/database/models/Bill"),
 
   // **Scraper**
     //Status
@@ -22,5 +23,6 @@ module.exports = {
     tagBill: require("./lib/parser/tagBill"),
 
   //Fields
-  validBillTypes: ["sres", "sjres", "sconres", "s", "hres", "hr", "hjres", "hconres"]
+  validBillTypes: ["s", "hr"],
+  validCongresses: [113, 114, 115]
 };
