@@ -15,6 +15,7 @@ Every element stored in the database will be a JSON object of the following temp
   "number": String,
   "numberInt": Int32,
   "billStatus": Object,
+  "sponsors": Array,
   "statusUrl": String
 }
 ```
@@ -31,4 +32,5 @@ Every element stored in the database will be a JSON object of the following temp
 * `number`: String version of the bill number (i.e. H. R. 1107)
 * `numberInt`: Number version of the bill number (i.e. 1107)
 * `billStatus`: Bill status object.
+* `sponsors`: Array of original bill sponsors
 * `statusUrl`: Path to the original XML bill status file
