@@ -6,4 +6,4 @@ Features to implement
 * Search method (searchBill.js)
 * Add error handler if there is no web connection
 * Get code coverage improved
-* Add a database of bill statuses
+* gradually phase out bill status in Bill schema, replacing it with relevant fields
