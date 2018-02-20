@@ -9,3 +9,7 @@ script:
   - istanbul cover ./node_modules/mocha/bin/_mocha -- --recursive
   - codecov
   - npm test
+before_script:
+  - sleep 15
+services:
+  - mongodb
