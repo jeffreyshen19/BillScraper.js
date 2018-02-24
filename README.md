@@ -16,6 +16,7 @@ A NPM module to scrape and analyze bills in Congress. Works for bills from the 1
 ## Getting Started
 * To get started, visit [GET_STARTED.md](docs/GET_STARTED.md).
 * For examples of how to use the library, visit `examples`.
+* A variety of guides on how to use the library are available in [docs](docs).
 * Documentation for all the methods is available [here](https://jeffreyshen19.github.io/BillScraper.js/out/).
 
 ## Why?
