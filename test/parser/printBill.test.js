@@ -31,4 +31,12 @@ describe('printBill', function() {
       });
     });
   });
+
+  it('should return an object if the bill is valid', function() {
+    getBill("BILLS-114s1024rs", (res) => {
+      printBill(res, function(printedRes){
+        expect(printedRes).to.be.an("object").that.is.not.empty;
+      });
+    }, {session: 2});
+  });
 });

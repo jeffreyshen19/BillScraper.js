@@ -40,4 +40,10 @@ describe('getBill', function() {
       expect(res).to.be.an("object").that.is.not.empty;
     }, {session: 1});
   });
+
+  it('should return an object if the billName is valid and options are valid', function() {
+    getBill("BILLS-114s1024rs", (res) => {
+      expect(res).to.be.an("object").that.is.not.empty;
+    }, {session: 2});
+  });
 });

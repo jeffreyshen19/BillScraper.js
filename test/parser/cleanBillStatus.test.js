@@ -31,4 +31,12 @@ describe('cleanBillStatus', function() {
       });
     });
   });
+
+  it('should return an object if the bill is valid', function(){
+    getBillStatus("BILLSTATUS-113s996", (res) => {
+      cleanBillStatus(res, function(cleanedRes){
+        expect(cleanedRes).to.be.an("object").that.is.not.empty;
+      });
+    });
+  });
 });

@@ -28,4 +28,10 @@ describe('getBillStatus', function() {
       expect(res).to.be.an("object").that.is.not.empty;
     });
   });
+
+  it('should return an object if the billName is valid', function() {
+    getBillStatus("BILLSTATUS-113s996", (res) => {
+      expect(res).to.be.an("object").that.is.not.empty;
+    });
+  });
 });

@@ -11,7 +11,6 @@ describe('generateDB', function() {
     var db = mongoose.connection;
     db.on('error', console.error.bind(console, 'Error connecting to database'));
     db.once('open', function() {
-      console.log('Connected to database');
       done();
     });
   });
@@ -36,5 +35,9 @@ describe('generateDB', function() {
 
   it('should generate a database', function() {
     generateDB("s", 115, 1);
+  });
+
+  it('should generate a database', function() {
+    generateDB("hr", 115, 1);
   });
 });

@@ -42,4 +42,8 @@ describe('createBill', function() {
   it('should save bills to the database', function() {
     createBill("BILLS-113hr1033rs", {session: 2});
   });
+
+  it('should save bills to the database', function() {
+    createBill("BILLS-114s1024rs", {session: 2});
+  });
 });
