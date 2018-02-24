@@ -13,6 +13,11 @@ A NPM module to scrape and analyze bills in Congress. Works for bills from the 1
 * `misc`: Hold all graphics for the README.md
 * `test`: Holds all unit tests.
 
+## Getting Started
+* To get started, visit [GET_STARTED.md](docs/GET_STARTED.md).
+* For examples of how to use the library, visit `examples`.
+* Documentation for all the methods is available [here](https://jeffreyshen19.github.io/BillScraper.js/out/).
+
 ## Why?
 The government hosts bulk data for all congressional bills at [gpo.gov/fdsys/bulkdata](https://www.gpo.gov/fdsys/bulkdata). However, this repository is horrible to use for developers, as bills are uploaded to unpredictable URLS as XML files. Each bill file is too structured, as XML style elements like paragraphs, bold text, and quotes are preserved, making it hard to parse the actual text of a bill.  
 
@@ -65,12 +70,6 @@ The government hosts bulk data for all congressional bills at [gpo.gov/fdsys/bul
   ![Database](misc/database.png)
 
   For documentation on the Bill struct stored in the database, visit [BILL_TEMPLATE.md](docs/BILL_TEMPLATE.md) in `docs`, for more detailed examples, visit [examples/database.js](examples/database.js), and for information on searching bills, see the examples in [examples/search_bills.js](examples/search_bills.js).
-
-
-### Documentation
-* To get started, visit [GET_STARTED.md](docs/GET_STARTED.md) in `docs`.
-* For examples of how to use the library, visit `examples`.
-* Documentation for all the methods is available [here](https://jeffreyshen19.github.io/BillScraper.js/out/).
 
 ## Community
 
